@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: booting
+---
+spring:
+  config:
+    active:
+      on-profile: dev
+server:
+  port:9090
+---
+  spring:
+    config:
+      active:
+        on-profile: test
+  server:
+    port:9000
