@@ -12,9 +12,9 @@ public class BootingApplication {
 
 	public static void main(String[] args) {
 
- /* 1 lesson create and run the project
+ // 1 lesson create and run the project
   SpringApplication.run(BootingApplication.class, args);
-*/
+
 
 /*	2 lesson to print 1 to 100
 	for(int i = 1; i<100; i++){
@@ -38,6 +38,20 @@ public class BootingApplication {
 		};
 Resolve FizzBuzz. Create variable to put, make the calculation if this calculation return 0 (%) print  FizzBuzz. In case the divison isn't 0 - so this variable its not empty, so print the number.  Another exercise to do, instead you make an interaction number, change to input a number - use the documentation if you need to learn more.
 */
+
+/* 4 Lesson = Spring data Repository
+Domain-Driver Desing
+
+simple operations of an entity or business objects
+separate logical to domain to business rules.
+start to repository interface ou seja crie uma classe de interface
+second - define common data acess methods - ou seja get and setter
+thrid - aplly your business logic to a repository instance - crie outra classe pra poder criar suas logicas
+Database drivers - colocar no maven e properties o que vc precisa pra conectar no banco
+Can onlu have one database auto-configured - when properly configured you will fet a DataSource object - Um vai beleza mas se tem 2 bancos 1 deles vc precisa configurar.
+
+
+ */
 
 }
 
