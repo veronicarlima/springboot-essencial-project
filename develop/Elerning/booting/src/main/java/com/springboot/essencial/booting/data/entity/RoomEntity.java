@@ -1,13 +1,15 @@
 package com.springboot.essencial.booting.data.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.UUID;
 
 @Entity
 @Table(name="ROOMS")
-@Data
+@Getter
+@Setter
 public class RoomEntity {
 
     @Id
@@ -24,4 +26,13 @@ public class RoomEntity {
     @Column(name="BED_INFO")
     private String bedInfo;
 
+    @Override
+    public String toString() {
+        return "RoomEntity{" +
+                "roomId=" + roomId +
+                ", name='" + name + '\'' +
+                ", number=" + number +
+                ", bedInfo='" + bedInfo + '\'' +
+                '}';
+    }
 }
